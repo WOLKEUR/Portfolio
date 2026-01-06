@@ -1,0 +1,38 @@
+
+body{
+   font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+    background-color : rgb(10, 10, 10); 
+}
+
+h1{
+    color: #EDEDED;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: #151515;
+  padding: 30px 20px;
+  font-size: 24px;
+}
+
+.Header{
+    height: 100vh;
+    background-image:url(https://res.cloudinary.com/dewzjk72j/image/authenticated/s--00d5Usve--/c_crop,w_3307,h_1860,g_north_west/c_scale,w_1920/f_auto:image,q_auto/FO4_ART_AnniversaryEdition_16x9_GUN_Clean_mnt65i);
+}
+
+a{
+    color: #EDEDED;
+}
+
+summary{
+    color: #EDEDED;
+}
+
+.logo{
+
+}
