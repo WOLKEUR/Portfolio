@@ -1,38 +1,217 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+              /*COULEURS*/
+.textColor{
+  color: #EDEDED;
+}
+.textColor02{
+  color: #F0C800;
+}
+.headerFooterColor{
+  background: #151515;
+}
+.submitButtonColor{
+  border-color: #EDEDED;
+}
+.shadow{
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
 
 body{
-   font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
+  font-family: "Bebas Neue", sans-serif;
+  /*font-weight: 400;*/
   font-style: normal;
-
-    background-color : rgb(10, 10, 10); 
+  overflow-x: hidden;
+  background-color : rgb(10, 10, 10);
 }
 
-h1{
-    color: #EDEDED;
+              /*MODE CLAIR*/
+body.light{
+  background-color: #EDEDED;
 }
+body.light .textColor{
+  color: rgb(10, 10, 10);
+}
+body.light .headerFooterColor {
+  background-color: #d2d2d2;
+}
+body.light .shadow{
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+}
+body.light .submitButtonColor{
+  border-color: #151515;
+}
+
 
 header nav {
+  position: fixed;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 30px;
-  background: #151515;
   padding: 30px 20px;
   font-size: 24px;
+  z-index: 1000;
 }
 
-.Header{
-    height: 100vh;
-    background-image:url(https://res.cloudinary.com/dewzjk72j/image/authenticated/s--00d5Usve--/c_crop,w_3307,h_1860,g_north_west/c_scale,w_1920/f_auto:image,q_auto/FO4_ART_AnniversaryEdition_16x9_GUN_Clean_mnt65i);
+.nav-right, #bouttonMode{
+  border: 3px solid #F0C800;
+  padding: 4px 6px;
+  text-decoration: none;
+  margin-left: auto;
+  white-space: nowrap;
+  outline: none;
+  background-color: #F0C800;
 }
+
+#myName {
+  max-width: 90%;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+  letter-spacing: 10px;
+  font-weight: 700;
+  pointer-events: none;
+}
+#myRank{
+  max-width: 90%;
+  white-space: nowrap;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 75px;
+  letter-spacing: 8px;
+  font-weight: 700;
+  pointer-events: none;
+
+}
+
+.HeaderImage{
+    height: 115vh;
+    background-image:url(./images/AnnonceUnivers_SCU.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.categories{
+  margin-top: 75px;
+}
+
+.titreDeCategorie{
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 50px;
+}
+
+#Bundle_SCU{
+  width: 100vh;
+  align-items: center;
+  margin-left: 59vh;
+  margin-bottom: 100px;
+}
+#tavern{
+  width: 100vh;
+  align-items: center;
+  margin-left: 59vh;
+}
+
+
+
+
 
 a{
-    color: #EDEDED;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, p{
+  pointer-events: none;
 }
 
 summary{
-    color: #EDEDED;
+  cursor: pointer;
+}
+summary:hover{
+  text-decoration: underline;
 }
 
 .logo{
 
+}
+
+footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 50px;
+  font-size: 24px;
+  width: 100%;
+  margin: auto;
+  z-index: 1000;
+  margin-top: 50vh;
+}
+
+.formulaire{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+  width: 500vh;
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.case{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 400px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#message{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 400px;
+  height: 200px;
+  font-size: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.submitButton{
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#name-error, #email-error, #message-error{
+  color: rgb(232, 0, 0);
+}
+
+.hidden{
+  display: none;
 }

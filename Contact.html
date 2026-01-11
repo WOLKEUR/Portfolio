@@ -9,12 +9,57 @@
 </head>
 
 <body class="body">
-   <header class="Header">
-        <nav>
+   <header>
+
+        <section id="top"></section>
+
+        <nav class="headerFooterColor">
+           
             <img class="logo" src="" alt="logo centrale">
 
-            <a href="Portfolio.html">PORTFOLIO</a>
-            <a href="Contact.html">CONTACT</a>
+            <a href="Portfolio.html"class="textColor">PORTFOLIO</a>
+            <a href="Contact.html"class="textColor">CONTACT</a>
+
+            <div class="nav-right">
+            <a href="#" id="bouttonMode" class="textColor">MODE CLAIR</a>
+            </div>
         </nav>
+
+         
     </header>
+<br>
+<section class="formulaire headerFooterColor">
+            <form action="">
+                <label for="name" class="case textColor" >Nom : </label><br>
+                <input id="name" class="case" type="text" placeholder="Ex : Eva Bervas"><br>
+                <p id="name-error" class="error hidden case"> Vous devez remplir un nom </p><br>
+
+                <label for="email" class="case textColor" >email : </label><br>
+                <input class="case" type="email" name="email" id="email" placeholder="Ex : nom@mail.com"><br>
+                <p id="email-error" class="error hidden case"> Vous devez remplir un mail </p><br>
+
+                <label for="message" class="case textColor" >Message : </label><br>
+                <textarea name="" id="message" placeholder="Décriver la raison de votre contact."></textarea><br>
+                <p id="message-error" class="error hidden case">Le message doit contenir au moins 40 caractères</p><br>
+
+                <input type="submit" class="submitButton submitButtonColor textColor headerFooterColor" value="ENVOYER">
+
+            </form>
+        </section>
+   
+
+    <footer class="footer">
+        <nav class="headerFooterColor">
+            <a href="https://www.linkedin.com/in/owen-bervas-198873385/" class="textColor">LINKEDIN</a>
+            <a href="#top" class="textColor">RETOUR EN HAUT DE PAGE</a>
+            <p class="textColor02">2026 WOLKEUR ALL RIGHTS RESERVED.</p>
+        </nav>
+        
+    </footer>
+
+
+    <script src="ModeSombre.js"></script>
+    <script src="formulaireContact.js"></script>
+
 </body>
+</html>

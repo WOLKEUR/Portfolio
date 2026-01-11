@@ -9,44 +9,70 @@
 </head>
 
 <body>
-    <header class="Header">
+    <header class="HeaderImage">
 
-         <section id="top">
+        <section id="top"></section>
 
-    </section>
-
-        <nav>
+        <nav class="headerFooterColor">
            
             <img class="logo" src="" alt="logo centrale">
 
              <details>
-                <summary>MES PROJETS</summary>
+                <summary class="textColor">MES PROJETS</summary>
                 <ul>
-                    <li><a href="#univers">UNIVER</a></li>
-                    <li><a href="#3D">MODELISATION 3D</a></li>
-                    <li><a href="#films">COURT METRAGE</a></li>
+                    <li><a href="#univers"class="textColor">CREATION DIGITAL</a></li>
+                    <li><a href="#3D"class="textColor">MODELISATION 3D</a></li>
+                    <li><a href="#films"class="textColor">COURT METRAGE</a></li>
                 </ul>
             </details>
 
-            <a href="Portfolio.html">PORTFOLIO</a>
-            <a href="Contact.html">CONTACT</a>
+            <a href="Portfolio.html"class="textColor">PORTFOLIO</a>
+            <a href="Contact.html"class="textColor">CONTACT</a>
+
+            <div class="nav-right">
+            <a href="#" id="bouttonMode" class="textColor">MODE CLAIR</a>
+            </div>
         </nav>
+
+        <div class="shadow">
+            <h1 id="myName" class="textColor">OWEN BERVAS</h1>
+            <h1 id="myRank" class="textColor">BACHELOR 1 IIM NANTES</h1>
+        </div>
+       
     </header>
 
-    <section id="univers">
-        <h1>UNIVER</h1>
-        <img src="" alt="photo ghoul">
-    </section>
 
-     <section id="3D">
-        <h1>MODELISATION</h1>
-        <img src="" alt="photo 3D">
-    </section>
+    <div class="categories">
+        <section id="univers">
+            <div>
+                <h1 class="textColor titreDeCategorie">CREATION DIGITAL</h1>
+                <h2 class="textColor titreDeCategorie">PHOTOSHOP</h2>
+                <img src="./images/Bundle_SCU.png" alt="teste" id="Bundle_SCU">
+            </div>
+        </section>
 
-     <section id="films">
-        <h1>COURT METRAGE</h1>
-        <img src="" alt="courtmetrage">
-    </section>
+        <section id="3D">
+            <h1 class="textColor titreDeCategorie">MODELISATION</h1>
+            <h2 class="textColor titreDeCategorie">BLENDER</h2>
+            <img src="./images/RenderTavern_Bervas_Owen.png" alt="teste" id="tavern">
+        </section>
 
-    <a href="#top">RETOUR EN HAUT DE PAGE</a>
+        <section id="films">
+            <h1 class="textColor titreDeCategorie">COURT METRAGE</h1>
+            <img src="" alt="courtmetrage">
+        </section>
+    </div>
+   
+
+    <footer class="footer">
+        <nav class="headerFooterColor">
+            <a href="https://www.linkedin.com/in/owen-bervas-198873385/" class="textColor">LINKEDIN</a>
+            <a href="#top" class="textColor">RETOUR EN HAUT DE PAGE</a>
+            <p class="textColor02">2026 WOLKEUR ALL RIGHTS RESERVED.</p>
+        </nav>
+        
+    </footer>
+
+    <script src="ModeSombre.js"></script>
 </body>
+</html>
