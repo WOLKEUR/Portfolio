@@ -111,11 +111,17 @@ header nav {
 .categories{
   margin-top: 75px;
 }
-
 .titreDeCategorie{
   text-align: center;
   letter-spacing: 3px;
   font-size: 50px;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+img:hover{
+  transform: scale(1.025);
 }
 
 
