@@ -9,7 +9,7 @@
   color: #EDEDED;
 }
 .textColor02{
-  color: #F0C800;
+  color: #dda900;
 }
 .headerFooterColor{
   background: #151515;
@@ -27,15 +27,18 @@ body{
   /*font-weight: 400;*/
   font-style: normal;
   overflow-x: hidden;
-  background-color : rgb(10, 10, 10);
+  background: linear-gradient(to bottom, rgb(49, 49, 49), rgb(10, 10, 10));
 }
 
               /*MODE CLAIR*/
 body.light{
-  background-color: #EDEDED;
+  background: linear-gradient(to bottom, #dbdbdb, #EDEDED);
 }
 body.light .textColor{
   color: rgb(10, 10, 10);
+}
+body.light .textColor02{
+  color: #dda900;
 }
 body.light .headerFooterColor {
   background-color: #d2d2d2;
@@ -47,7 +50,7 @@ body.light .submitButtonColor{
   border-color: #151515;
 }
 
-
+              /*BARRE DE NAVIGATION DU HAUD*/
 header nav {
   position: fixed;
   width: 100%;
@@ -69,6 +72,7 @@ header nav {
   background-color: #F0C800;
 }
 
+              /*TEXTE PRINCIPAL*/
 #myName {
   max-width: 90%;
   white-space: nowrap;
@@ -94,7 +98,7 @@ header nav {
   pointer-events: none;
 
 }
-
+              /*IMAGE DE FOND*/
 .HeaderImage{
     height: 115vh;
     background-image:url(./images/AnnonceUnivers_SCU.png);
@@ -103,7 +107,7 @@ header nav {
     background-repeat: no-repeat;
 }
 
-
+              /*TOUT LE PORTFOLIO*/
 .categories{
   margin-top: 75px;
 }
@@ -114,22 +118,105 @@ header nav {
   font-size: 50px;
 }
 
-#Bundle_SCU{
-  width: 100vh;
+
+              /*3D*/
+.gridGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 images par ligne */
+  gap: 20px;
+  justify-content: center;
   align-items: center;
-  margin-left: 59vh;
-  margin-bottom: 100px;
 }
-#tavern{
-  width: 100vh;
-  align-items: center;
-  margin-left: 59vh;
+.gridGallery img{
+  width: 60vh;
+  object-fit: cover;
 }
 
+              /*COURT METRAGE*/
+#films{
+  margin-bottom: 10vh;
+}
+.videoEtTexte {
+    display: flex;
+    gap: 20px;
+    margin-top: 10vh;
+}
+.videoEtTexte video {
+    width: 60%;
+}
+.videoEtTexte .presentationVideo {
+  width: 40%;
+  font-size: 2.5vh;
+  margin-right: 2vh;
+justify-content: center;
+}
+
+.videoContainer{
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+  
+
+.videoContainer iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 
 
 
 
+
+
+
+
+
+              /*PHOTOSHOP*/
+.affiche{
+  display: flex;
+  width: 100%;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+}
+.affiche img{
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+}
+
+              /*CARROUSSEL DE CARTES*/
+.carrousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 40px 0;
+  justify-content: center;
+  height: 300px;
+
+}
+.carrousel img {
+  width: 250px;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.carrousel img:hover {
+    transform: scale(1.3);
+    opacity: 1;
+}
+
+
+
+
+              /*DETAILS*/
 a{
   text-decoration: none;
 }
@@ -149,9 +236,10 @@ summary:hover{
 }
 
 .logo{
-
+  width: 7vh;
 }
 
+              /*BARRE DE NAVIGATION DU BAS*/
 footer nav {
   display: flex;
   flex-direction: row;
@@ -166,6 +254,7 @@ footer nav {
   margin-top: 50vh;
 }
 
+              /*FORMULAIRE*/
 .formulaire{
   display: flex;
   flex-direction: column;
