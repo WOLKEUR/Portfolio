@@ -24,9 +24,7 @@
 
 body{
   font-family: "Bebas Neue", sans-serif;
-  /*font-weight: 400;*/
   font-style: normal;
-  overflow-x: hidden;
   background: linear-gradient(to bottom, rgb(49, 49, 49), rgb(10, 10, 10));
 }
 
@@ -116,6 +114,11 @@ header nav {
   letter-spacing: 3px;
   font-size: 50px;
 }
+.lienEnSavoirPlus{
+  align-items: right;
+  text-align: center;
+  letter-spacing: 2px;
+}
 
 img {
   transition: transform 0.3s ease;
@@ -128,14 +131,39 @@ img:hover{
               /*3D*/
 .gridGallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 images par ligne */
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
+  margin-bottom: 10vh;
 }
 .gridGallery img{
   width: 60vh;
+  max-width: 100%;
   object-fit: cover;
+}
+              /*3D seconde page*/
+.BlenderEtTexte {
+    display: flex;
+    gap: 20px;
+    margin-top: 15vh;
+    align-items: center;
+}
+.GIF3D{
+  width: 60%;
+  align-items: center;
+}
+.presentation3D {
+  width: 40%;
+  font-size: 2.5vh;
+  margin-right: 2vh;
+  justify-content: center;
+}
+#tavern{
+width: 45%;
+margin-left: 15vh;
+margin-right: 15vh;
+
 }
 
 
@@ -155,7 +183,7 @@ img:hover{
   width: 40%;
   font-size: 2.5vh;
   margin-right: 2vh;
-justify-content: center;
+  justify-content: center;
 }
 .videoContainer{
   position: relative;
